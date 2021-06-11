@@ -1,0 +1,291 @@
+/*공통*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+*{margin: 0; padding: 0}
+ul{list-style: none}
+.hidden{position: absolute; width: 1px; height: 1px; overflow: hidden}
+.inner{width: 1280px; margin: 0 auto}
+
+/*위쪽 상단*/
+.top_header{width: 100%; height: 50px; line-height: 50px}
+.util{width: 147px; float: right}
+.util>li{width: 25%; float: left}
+.util:after{display: block; content: ""; clear: both}
+
+/*아래쪽 상단*/
+.bottom_header{width: 100%; height: 83px}
+.bottom_header>.inner{width: 1280px; height: 83px; position: relative}
+.menu{width: 400px; float: left}
+.menu>li{width: 25%; float: left; font-weight: bold; font-size: 18px; line-height: 70px}
+.menu:after{display: block; content: ""; clear: both}
+.menu>li>a{text-decoration: none; color: #000000}
+.sub_menu>li>a{text-decoration: none; color: #000000}
+.logo{width: 200px; height: 100px; position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 30%}
+.sub_menu{float: right}
+.sub_menu>li{float: left; padding-left: 20px; padding-right: 10px; font-weight: bold; font-size: 18px; line-height: 70px}
+.sub_menu:after{display: block; content: ""; clear: both}
+
+/*메인이미지*/
+#mainimg{width: 100%; height: 640px; background-image: url(../img/mainimg_1.png); background-repeat: no-repeat; background-size: cover; background-position: center center}
+
+/*컨텐츠1*/
+.content1{width: 1280px; margin: 100px auto 0}
+.content1_title{width: 100%; height: 112px; position: relative; text-align: center}
+.content1_title:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #333333;
+    top: 10%
+}
+.content1_title > h2 {
+    position: absolute;
+    width: 30%;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0 auto
+;font-size: 30px}    
+.content1_title>p{padding-top: 50px; font-weight: bold; color: #727272; font-size: 18px}
+.content1_slider{width: 1280px; height: 520px; position: relative}
+.content1_slider>.btn_prev{position: absolute; left: 0; top: 45%}
+.content1_slider>.btn_next{position: absolute; right: 0; top: 45%}
+.content1_list{width: 1050px; position: absolute; left: 0; right: 0; margin: 0 auto
+}
+.content1_list>.slide{width: 33.3%; float: left; margin-top: 20px}
+.content1_list>.slide>img{box-shadow: -13px 20px 9px #bcbcbc}
+.content1_list:after{display: block; content: ""; clear: both}
+.content1_sub{width: 100%; height: 130px}
+.data_box{width: 100%; height: 170px; float: left; }
+.data1{float: left; width: 372px;height: 172px; background-image: url(../img/content1_sub-left.png); background-repeat: no-repeat;background-size: cover;position: relative}
+.data1>p{position: absolute; top:50%; right: 25%; color: #fff; font-weight: bold; font-size: 25px}
+.data2{float: left; width: 372px;height: 172px; background-image:url(../img/content1_sub-center.png); background-repeat: no-repeat; background-size: cover; position: relative}
+.data2>p{position: absolute; top: 50%; right: 20%; color: #fff; font-weight: bold; font-size: 25px}
+.data3{float: left; width: 372px; height: 172px; background-image:url(../img/content1_sub-right.png); background-repeat: no-repeat; background-size: cover; position: relative}
+.data3>p{position: absolute; top: 50%; right: 20%; color: #fff; font-weight: bold; font-size: 25px}
+.data_box:after{display: block; content: ""; clear: both}
+.data_btn{float: right;width: 164px; height: 135px; background-color: #011132; position: relative; margin-top: 37px}
+.data_btn>p{position: absolute; top: 36%; left: 30px; font-size: 25px; color: #fff; font-weight: bold}
+.data_btn:after{display: block; content: ""; clear: both}
+
+/*컨텐츠2*/
+.content2{width: 100%; height: 340px; background-color: #011132; margin-top: 160px; color: #fff; background-image:url(../img/content2_bg.png); background-repeat: no-repeat; background-size: cover}
+.content2>.inner{width: 1280px; height: 340px; position: relative}
+.content2>.inner>div{position: absolute; top: 30%; left: 10%}
+.content2>.inner>div>h2{font-size: 30px; padding-bottom: 20px}
+.content2>.inner>div>p{font-size: 20px}
+.content2>.inner>ul{position: absolute; right: 1%; top: 38%; font-size: 14px; width: 600px}
+.content2>.inner>ul>li{width: 20%; float: left; text-align: center; line-height: 30px; margin: 0 15px}
+.content2>.inner>ul>li:first-child{margin-top: 33px}
+.content2>.inner>ul>li:nth-child(3){margin-top: 14px}
+.content2>.inner>ul>li:nth-child(2){margin-top: 7px}
+.content2>.inner>ul:after{display: block; content: ""; clear: both}
+
+/*컨텐츠3*/
+.content3{width: 100%; height: 850px; background-color: #d6d7d9; background-size: cover}
+.content3_title{width: 300px; height: 108px; left: 0; right: 0 ; margin: 0 auto; text-align: center; padding-top: 50px}
+.content3_title>h2{font-size: 30px}
+.content3_title>p{padding-top: 10px; font-size: 18px; font-weight: bold; color: #7e7e7e}
+.content3_list{width: 1280px; height: 491px; left: 0; right: 0; margin: 0 auto; padding-top: 50px}
+.content3_list>.slide:nth-child(1){float: left; width: 272px; height: 484px; margin: 0 120px; box-shadow: -13px 20px 9px #bcbcbc}
+.content3_list>.slide:nth-child(2){float: left; width: 272px; height: 484px; margin-right: 120px; box-shadow: -13px 20px 9px #bcbcbc}
+.content3_list>.slide:nth-child(3){float: left; width: 272px; height: 484px; box-shadow: -13px 20px 9px #bcbcbc}
+.content3_list>.slide:after{display: block; content: ""; clear: both}
+
+/*컨텐츠4*/
+.content4{text-align: center; padding-top: 110px}
+.content4>h2{font-size: 36px}
+.content4>p{font-size: 20px; color: #6d6d6d; padding: 20px 0 130px; font-weight: bold}
+.content4>ul{width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold}
+.content4>ul>li{width: 25%; float: left}
+.content4>ul>li>i{height: 110px;
+    display: block}
+.content4>ul:after{display: block; content: ""; clear: both}
+
+/*컨텐츠5*/
+.content5{width: 100%; height: 340px; background-image: url(../img/content5_bg.png); background-size: cover; margin-top: 169px; color: #fff; text-align: center}
+.content5>p{padding: 85px 0 19px 0;
+    font-size: 23px;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.8); font-weight: bold}
+.content5>div{width: 194px; height: 54px; line-height: 50px; margin: 25px auto 0;
+border: 3px solid #fff;text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); font-size: 20px}
+
+/*컨텐츠6*/
+.content6{width: 1280px; height: 80px; line-height: 80px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #000100}
+.content6>h2{float: left; width: 136px}
+.content6>p{float: left; font-weight: bold; font-size: 18px}
+.content6>ul{float: right}
+.content6:after{display: block; content: ""; clear: both}
+.date {
+    float: left; font-weight: bold
+}
+.more {
+    float: right;
+    width: 110px;
+    text-align: right;
+    font-weight: bold
+}
+.content6>ul:after{display: block; content: ""; clear: both}
+
+/*푸터*/
+#footer{width: 100%; height: 295px; background-color: #011132; position: relative}
+.footer_logo{width: 298px; height: 58px; position:absolute; top: 20%}
+#footer>.inner>ul{width: 670px; height: 64px; float: left; margin-left: 635px}
+#footer>.inner>ul>li{width: 33%; float: left; margin-top: 50px}
+#footer>.inner>ul:after{display: block; content: ""; clear: both}
+#footer>.inner>p{color: #c3c5c9; position: absolute; top: 40%}
+
+
+/*서브페이지*/
+.location{width: 100%;
+    height: 45px;
+    line-height: 45px;}
+.location>.inner>ul>li{float: left}
+.location>.inner>ul:after{display: block; content: ""; clear: both}
+.location>.inner>ul>li>select{border: none;
+    height: 44px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 13px}
+.location>.inner>ul>li:first-child{margin-right: 70px}
+
+.titlebodyimage{width: 100%; height: 487px; background-image: url(../img/mainimg_sub.png); background-repeat: no-repeat; background-size: cover; background-position: center center}
+
+.goods_cons{width: 1280px; margin: 0 auto; text-align: center}
+.goods_rate{padding-top: 87px}
+.goods_rate>h2{font-size: 28px}
+.goods_rate>p{font-size: 16px; font-weight: bold; color: #6d6d6d; padding-top: 10px}
+.goods_spec{width: 100%; height: 625px; padding: 65px 0}
+.goods_spec>dl{width: 33.3%; float: left}
+.goods_spec:after{display: block; content: ""; clear: both}
+.goods_spec>dl>dt{font-size: 28px; font-weight: bold}
+.goods_spec>dl>dt>i{display: block}
+.goods_spec>dl>dd{font-size: 15px}
+.goods_spec>dl>dd>ul{width: 60%; margin: 0 auto; line-height: 30px; padding-bottom: 100px}
+
+.goods_adddiscount{width: 100%; height: 695px; background-color: #f3f3f4; position: relative}
+.add_left{width: 630px; height: 470px; float: left; border-top: 3px solid #000000; border-bottom: 3px solid #000000}
+.add_right{width: 630px; height: 470px; float: right; border-top: 3px solid #000000; border-bottom: 3px solid #000000}
+.add_set:after{display: block; content: ""; clear: both}
+.add_set{padding-top: 80px}
+.add_left>h2{position: absolute; top: 5%}
+.add_left>p{position: absolute; left: 45.5%; font-size: 20px; top: 13%}
+.left_img{position: absolute; top: 18%}
+.add_left>h4{position: absolute; bottom: 22%; left: 20%; font-size: 25px; color: #6d6d6d}
+.add_right>h2{position: absolute; top: 5%}
+.add_right>p{position: absolute; right: 17%; font-size: 20px; top: 13%}
+.right_img{position: absolute; right: 16%; top: 18%}
+.add_right>h4{position: absolute; bottom: 22%; font-size: 25px; right: 19%; color: #6d6d6d}
+.address{width: 100%; height: 140px; background-color: #494949; position: relative}
+.come{color: #fff; position: absolute; top: 40%; left: 16.5%; font-size: 20px; font-weight: bold}
+.address>p{color: #fff; position: absolute; top: 18%; left: 27%; font-size: 17px}
+.address>p>span{color: #f6f7b2; font-weight: bold; font-size: 20px}
+
+
+@media (max-width:1279px){
+    
+    #header{width: 100%; position: relative}
+    .logo{bottom: 0; text-align: center}
+    .logo img{width: 50%}
+    .top_header{display: none}
+    .bottom_header{height: 132px; line-height: normal}
+    .bottom_header>.inner{height: 132px;}
+    .inner{width: 100%}
+    .bottom_header>.inner{width: 100%}
+    .menu{float: none; margin: 0 auto; padding-top: 80px}
+    
+    #mainimg{background-image: url(../img/mainimg_mov.png); height: 0; padding-top: calc(1056/768*100%)}
+    
+    .content1{width: 100%}
+    .content1_title{width: 98%; left: 0; right: 0; margin: 0 auto}
+    .content1_title>h2{width: 40%}
+    .content1_title>p{display: none}
+    .content1_slider{width: 90%; left: 0; right: 0; margin: 0 auto; height: auto}
+    .content1_list>.slide>img{width: 100%}
+    .content1_list>.slide:nth-child(2){display: none}
+    .content1_list>.slide:nth-child(3){display: none}
+    .content1_list{width: 50%; height: 0; padding-top: calc(240/305*100%);position: relative}
+    .content1_list>.slide{position: absolute; top: 0; width: 100%}
+    .content1_sub{height: 432px; padding-top: 70px}
+    .data_box{width: 100%; float: none}
+    .data_box>.data1{width: 100%; background-image: url(../img/content1_sub-mob1.png); background-size: cover}
+    .data1>p{left: 53%}
+    .data2>p{left: 53%}
+    .data3>p{left: 53%}
+    .data_box>.data2{width: 100%; height: 130px; background-image: url(../img/content1_sub-mob2.png); background-size: cover}
+    .data_box>.data3{width: 100%; height: 130px; background-image: url(../img/content1_sub-mob3.png); background-size: cover}
+    .data_btn{display: none}
+    .content2{height: 472px; margin-top: 0; background-image: url(../img/content3_bg-mov.png); background-position: center center; background-size: cover}
+    .content2>.inner{width: 100%}
+    .content2>.inner>div{left: 0; right: 0; margin: 0 auto; text-align: center}
+    .content2>.inner>ul{top: auto; left: 0; right: 0; margin: 0 auto; bottom: 1%; width: 100%}
+    .content3{width: 100%; height: 0; padding-top: calc(482 / 474 * 100%); position: relative;}
+    .content3_title{position: absolute; top: 0}
+    .content3_list{width: 100%; height:0; position: absolute;
+    top: 20%}
+    .content3_list>.slide:nth-child(1){width: calc(100% / 3 - 20px); margin: 0 10px; height: auto}
+    .content3_list>.slide:nth-child(2){width: calc(100% / 3 - 20px); margin: 0 10px; height: auto}
+    .content3_list>.slide:nth-child(3){width: calc(100% / 3 - 20px); margin: 0 10px; height: auto}
+    .content3_list>.slide>img{width: 100%}
+    .content4>ul{width: 100%}
+    .content4>ul>li{width: 50%; padding-bottom: 50px}
+    .content5{margin-top: 50px; background-image: url(../img/content5_bg-mob.png)}
+    .content6{width: 98%}
+    .more{display: none}
+    #footer{position: relative}
+    #footer>.inner{width: 98%}
+    
+    #footer>.inner>p{top: 50%; left: 0; right: 0; margin: 0 auto; text-align: center}
+    #footer>.inner>ul{width: 80%; margin-left: 0; float: right;    position: absolute;
+    top: 20%; right: 0}
+    #footer>.inner>ul img{width: 80%}
+    #footer>.inner>ul>li{margin-top: 0}
+    #footer>.inner>ul>li:nth-child(3){position: absolute; left: 0; float: none}
+    #footer>.inner>ul>li:nth-child(2){position: absolute; right: 0}
+    #footer>.inner>ul>li:nth-child(1){position: absolute; right: 0;
+    left: 0;
+    margin: 0 auto}
+    .footer_logo{width: 20%; float: left}
+    .footer_logo>img{width: 80%}
+    
+    /*서브*/
+    .location{background-color: #494949}
+    .location > .inner > ul > li > select {
+        background-color: #494949;
+        color: #fff
+    }
+    .location>.inner>ul>li>select{height: auto; vertical-align: middle}
+    .sub_menu{display: none}
+    .titlebodyimage{padding-top: calc(481/1920*100%);background-image: url(../img/mainimg_sub-mob.png); background-size: cover}
+    .goods_cons{width: 95%}
+    .goods_spec{height: auto; border: 1px solid #000}
+    .goods_spec>dl{width: 50%}
+    .goods_rate{padding-top: 20px}
+    .goods_adddiscount{width: 100%; height: auto}
+    .add_set>.add_left{width: 40%; height: auto; border-top: none; border-bottom: none}
+    .add_set>.add_right{width: 40%;border-bottom: none; border-top: none}
+}
+
+
+
+
+
+@media (max-width:768px){
+    .sub_menu{display: none}
+    #header{height: 92px}
+    .bottom_header>.inner>.menu{height: 0; padding-top: 30px}
+    .logo{top: 0}
+    .logo img{width: 40%}
+    .content1_title>h2{width: 55%}
+    .content1_sub{height: 300px}
+    .data_box>.data1{width: 100%; height: 100px; background-position: auto}
+    .data_box>.data2{width: 100%; height: 100px; background-size: auto}
+    .data_box>.data3{width: 100%; height: 100px; background-size: auto}
+}
